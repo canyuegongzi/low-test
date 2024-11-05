@@ -1,6 +1,27 @@
-import { ComponentDSL } from "@lowcode-set-up-platform/dsl";
-import {VariableItem} from "@lowcode-set-up-platform/editor";
 
+
+// 组件节点
+interface ComponentDSL {
+  [key: string]: any;
+
+}
+interface VariableItem {
+  /**
+   * 变量key
+   */
+  name: string;
+
+  /**
+   * 变量值
+   */
+  value: string;
+
+  sourceCode: string;
+
+  path: string;
+
+  children?: VariableItem[]
+}
 export interface NodeConfig {
   type: string;
   aliasType: string;

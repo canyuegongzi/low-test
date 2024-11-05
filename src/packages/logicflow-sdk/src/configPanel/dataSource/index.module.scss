@@ -32,8 +32,8 @@
 }
 
 .panel-item {
-  width: 100%;
-  display: inline-flex;
+  //width: 100%;
+  //display: inline-flex;
 }
 .ds-label {
   color: #333;
@@ -54,6 +54,7 @@
   align-items: self-start;
 }
 .importCurl {
+  width: 100%;
   text-align: left;
   color: #409EFF;
   background: #f3f6fa;

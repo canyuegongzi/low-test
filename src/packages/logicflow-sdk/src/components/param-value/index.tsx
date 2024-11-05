@@ -6,9 +6,9 @@ import React, {useContext, useEffect, useMemo, useRef, useState} from 'react';
 import {Dropdown, Input, Select, Space, TreeSelect, Typography} from "antd";
 import classNames from "classnames";
 import {ArrowsAltOutlined} from "@ant-design/icons";
-import {isJSExpression} from "@lowcode-set-up-platform/shared";
 import SelectVariable, {EmitSelectVariableValue} from "../selectVariable";
 import CoreContext from "../../context/core.ts";
+import {isJSExpression} from "../../../../utils/src/is-jsexpression.ts";
 
 
 export type ValueType = 'option' | 'input' | 'pageState' | 'componentProp' | 'dataSource' | 'dataConvert' | 'urlParam' | 'initParam' | string

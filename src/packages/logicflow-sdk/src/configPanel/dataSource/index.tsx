@@ -4,7 +4,7 @@ import classNames from "classnames";
 import {FC, useEffect, useRef, useState} from "react";
 import {EmitParamCollectorValue, NormalValueType, ParamCollector} from "../../components/param-collector";
 import {useThrottleFn} from "ahooks";
-import {utils} from "@lowcode-set-up-platform/editor";
+import {parseCurl} from "../../../../utils/src/curl.ts";
 
 
 export interface DataSourcePanelIProps {
@@ -259,7 +259,7 @@ export const DataSourcePanel: FC<DataSourcePanelIProps> = (props: DataSourcePane
              open={curlModal} onOk={() => {
         setCurlModal(false)
         const url = curlModalUrl;
-        const result = utils.parseCurl(url);
+        const result = parseCurl(url);
         console.log(url, result);
 
         const body = result.body;

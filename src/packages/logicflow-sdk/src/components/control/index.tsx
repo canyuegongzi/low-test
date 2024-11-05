@@ -61,35 +61,35 @@ export const Control = (props: IProps) => {
     <div className={styles.control}>
       <div className={styles.panelLayout}>
         <Tooltip placement="left" title={"放大"}>
-          <ZoomInOutlined onClick={zoomIn} />
+          <ZoomInOutlined style={{color: '#000000'}} onClick={zoomIn}  />
         </Tooltip>
 
         <Tooltip placement="left" title={"缩小"}>
-          <ZoomOutOutlined onClick={zoomOut} />
+          <ZoomOutOutlined style={{color: '#000000'}} onClick={zoomOut}  />
         </Tooltip>
 
         <Tooltip placement="left" title={"大小适应"}>
-          <AimOutlined onClick={zoomReset} />
+          <AimOutlined style={{color: '#000000'}} onClick={zoomReset}  />
         </Tooltip>
 
         <Tooltip placement="left" title={"定位还原(大小&定位)"}>
-          <ReloadOutlined onClick={reset} />
+          <ReloadOutlined style={{color: '#000000'}} onClick={reset}  />
         </Tooltip>
 
         <Tooltip placement="left" title={"上一步"}>
-          <DoubleLeftOutlined onClick={undo} />
+          <DoubleLeftOutlined style={{color: '#000000'}}  onClick={undo}  />
         </Tooltip>
 
         <Tooltip placement="left" title={"下一步"}>
-          <DoubleRightOutlined onClick={redo} />
+          <DoubleRightOutlined style={{color: '#000000'}} onClick={redo} />
         </Tooltip>
 
         <Tooltip placement="left" title={"小地图"}>
-          <ExpandOutlined onClick={showMiniMap} />
+          <ExpandOutlined style={{color: '#000000'}} onClick={showMiniMap}  />
         </Tooltip>
 
         <Tooltip placement="left" title={"下载图片"}>
-          <VerticalAlignBottomOutlined onClick={download} />
+          <VerticalAlignBottomOutlined style={{color: '#000000'}} onClick={download}  />
         </Tooltip>
 
       </div>

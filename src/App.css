@@ -3,7 +3,31 @@ body {
   color: #fff;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   background-image: linear-gradient(to bottom, #020917, #101725);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.custom-react-node-content {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  cursor: move;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
 
 .content {
   display: flex;

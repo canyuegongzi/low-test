@@ -5,9 +5,11 @@ import {Collapse, CollapseProps, Tooltip, Tree} from "antd";
 import CoreContext from "../../context/core.ts";
 import {PageLifeCycleNodeItem} from "../../core/types.ts";
 import {genId} from "../../utils/calculate.ts";
-import {ComponentDSL} from "@lowcode-set-up-platform/dsl";
 import {CaretRightOutlined} from "@ant-design/icons";
 
+interface ComponentDSL {
+  [key: string]: any
+}
 
 interface IProps {
   flowCore: FlowCore;

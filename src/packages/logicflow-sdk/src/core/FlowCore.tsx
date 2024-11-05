@@ -180,7 +180,7 @@ class FlowCore {
     //this.graph.initView();
 
     // REMIND: 临时将 lf 挂到 window 方便调试
-    window.lf = this.lf;
+    (window as any).lf = this.lf;
 
     this.initEvents();
 

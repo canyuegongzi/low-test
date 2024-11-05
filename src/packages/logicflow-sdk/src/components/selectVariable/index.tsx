@@ -5,11 +5,12 @@ import Draggable from 'react-draggable';
 import styles from './index.module.scss'
 import {CaretRightOutlined, ExclamationCircleOutlined, FullscreenExitOutlined, HolderOutlined} from '@ant-design/icons';
 import {Panel, PanelGroup, PanelResizeHandle} from "react-resizable-panels";
-import MonacoEditor from "@lowcode-set-up-platform/plugin-base-monaco-editor";
+import MonacoEditor from "../../../../monaco-editor/src";
 import CoreContext from "../../context/core.ts";
-import {detectType, isJSExpression, parseData} from "@lowcode-set-up-platform/shared";
 import classNames from "classnames";
 import ReactJson from 'react-json-view'
+import {isJSExpression} from "../../../../utils/src/is-jsexpression.ts";
+import {detectType, parseData} from "../../../../utils/src/parse-data";
 
 interface IProps {
   open?: boolean;
@@ -154,6 +155,10 @@ const SelectVariable: React.FC<IProps> = (props: IProps) => {
   const selectTreeNode = (selectedKeys: string[], e: {selected: boolean, selectedNodes: any, node: any, event: any}, valueType: ValueType) => {
     setEditorCode(e.node.sourceCode)
     setSelectedTreeKeys(selectedKeys)
+    const editor = monacoEditorRef?.current?.getEditorRef?.();
+    // const monacoRef = monacoEditorRef?.current?.getMonacoRef?.();
+    editor.current?.setValue(e.node.sourceCode)
+
     // setSelectedNodes(e.selectedNodes)
     setValueType(valueType)
 

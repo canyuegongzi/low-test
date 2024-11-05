@@ -8,24 +8,37 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "@ant-design/icons": "^5.3.0",
+    "@ant-design/pro-components": "^2.8.1",
+    "@antv/layout": "0.1.31",
+    "@logicflow/core": "2.0.6",
+    "@logicflow/engine": "0.1.1",
+    "@logicflow/extension": "2.0.10",
+    "@logicflow/layout": "1.2.0-alpha.16",
+    "@logicflow/react-node-registry": "^1.0.6",
+    "@monaco-editor/loader": "^1.4.0",
+    "@rsbuild/plugin-less": "^1.1.0",
+    "@rsbuild/plugin-sass": "^1.1.0",
+    "@types/lodash-es": "^4.17.12",
     "ahooks": "^3.7.10",
     "antd": "^5.21.0",
     "axios": "^1.4.0",
-    "@antv/layout": "0.1.31",
-    "@logicflow/core": "^2.0.5",
-    "@logicflow/extension": "^2.0.9",
-    "@logicflow/layout": "1.2.0-alpha.16",
+    "classnames": "^2.5.1",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "monaco-editor": "^0.52.0",
     "parse-curl": "^0.2.6",
-    "react-json-view": "^1.21.3"
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-draggable": "^4.4.6",
+    "react-json-view": "^1.21.3",
+    "react-resizable-panels": "^2.1.6"
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.0.18",
+    "@rsbuild/core": "^1.0.19",
     "@rsbuild/plugin-react": "^1.0.5",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
     "typescript": "^5.6.3"
   }
 }

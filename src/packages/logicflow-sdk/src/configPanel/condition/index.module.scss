@@ -32,8 +32,8 @@
 }
 
 .panel-item {
-  width: 100%;
-  display: inline-flex;
+  //width: calc(100% - 16px);
+  //display: inline-flex;
 }
 .ds-label {
   color: #333;

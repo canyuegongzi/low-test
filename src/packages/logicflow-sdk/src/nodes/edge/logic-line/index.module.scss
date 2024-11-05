@@ -1,0 +1,108 @@
+.line-content {
+  background: #fff;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #303a51;
+  --node-primary-color: #2961ef;
+  position: relative;
+}
+.line-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--node-primary-color);
+  color: var(--node-primary-color);
+  background: rgba(41, 97, 239, 0.08);
+  font-size: 8px;
+  &.selected {
+    background: #fff;
+    border: 2px solid var(--node-primary-color);
+    box-shadow: 0 0 6px 0 rgba(41, 97, 239, 0.5);
+  }
+  .icon {
+    width: 8px;
+    height: 8px;
+  }
+}
+.popover-item {
+  --node-primary-color: #2961ef;
+  background: #f3f6fa;
+  border-radius: 2px;
+  padding: 0 4px;
+  cursor: pointer;
+  height: 28px;
+  color: var(--node-primary-color);
+  text-align: center;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icon {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+  }
+  &:hover {
+    background: rgba(41, 97, 239, 0.08);
+  }
+  &:first-child {
+    margin-bottom: 4px;
+  }
+}
+.condition-content {
+  padding: 8px 0;
+  border-bottom: 1px solid #e4e7ed;
+  margin-bottom: 10px;
+}
+.condition-title {
+  line-height: 16px;
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #e4e7ed;
+  font-family: PingFangSC-Medium;
+  font-size: 12px;
+  color: #303a51;
+  line-height: 16px;
+  font-weight: 500;
+}
+.condition-item {
+  font-weight: 400;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #303a51;
+  font-weight: 400;
+  .icon {
+    margin-right: 4px;
+    width: 12px;
+    height: 12px;
+  }
+  span {
+    display: inline-block;
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.condition-button {
+  --node-primary-color: #2961ef;
+  margin-top: 8px;
+  line-height: 24px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid var(--node-primary-color);
+  border-radius: 2px;
+  color: var(--node-primary-color);
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}

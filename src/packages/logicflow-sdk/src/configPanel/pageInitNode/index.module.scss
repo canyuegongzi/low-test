@@ -1,0 +1,71 @@
+.panelContainer {
+/*  position: absolute;
+  left: 0;
+  top: 0;*/
+  //width: 450px;
+  background: #ffffff;
+/*  z-index: 9999;
+  overflow: scroll;*/
+}
+
+.setter-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #303133;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebeef5;
+}
+.ds-panel-wrapper {
+  width: 100%;
+}
+.item-wrap {
+  background: #f3f6fa;
+  border-radius: 4px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #303a51;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 9px 12px;
+}
+
+.panel-item {
+  width: 100%;
+  display: inline-flex;
+}
+.ds-label {
+  color: #333;
+  line-height: 32px;
+  height: 32px;
+  margin-right: 8px;
+  min-width: 90px;
+}
+.item-wrap-al-center {
+  display: flex;
+  align-items: center;
+}
+.item-wrap-flex-1 {
+  flex: 1;
+}
+.item-wrap-vertical {
+  flex-direction: column;
+  align-items: self-start;
+}
+.importCurl {
+  text-align: left;
+  color: #409EFF;
+  background: #f3f6fa;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  transition: .1s;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+}

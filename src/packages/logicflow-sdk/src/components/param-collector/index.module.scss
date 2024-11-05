@@ -1,0 +1,41 @@
+.paramCollectorContainer {
+  width: 100%;
+  .form-item-select {
+    width: 100%;
+  }
+  :global {
+    form {
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.table {
+  // min-height: 300px;
+  :global {
+    .ant-table-wrapper {
+      // min-height: 300px;
+    }
+    .ant-table-tbody {
+      .form-item-container {
+        width: 100%;
+      }
+    }
+  }
+}
+// key
+.form-key-item-input {
+  // width: 100px;
+}
+// value
+.inputValueContainer {
+  display: flex;
+  flex-direction: row;
+  .inputValueTypeSelect {
+    // width: 100px;
+  }
+  .inputSetter {
+    // width: 100px;
+  }
+}

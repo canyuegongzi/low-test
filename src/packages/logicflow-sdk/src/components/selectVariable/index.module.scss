@@ -1,0 +1,186 @@
+.modalContainer {
+  background: transparent;
+  :global {
+    .ant-modal-content {
+      padding: 0;
+    }
+  }
+  .container {
+    width: 100%;
+    height: 500px;
+    .popout-header {
+      display: flex;
+      height: 40px;
+      padding: 0 8px 0 0;
+      border-bottom: 1px solid #e3e6eb;
+      box-sizing: border-box;
+      user-select: none;
+      .close-view {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .title-view {
+        display: flex;
+        align-items: center;
+        cursor: move;
+        padding-left: 8px;
+        z-index: 1;
+        .span {
+          color: #13161b;
+          font-size: 12px;
+          margin-left: 6px;
+        }
+      }
+    }
+    .content {
+      width: 100%;
+      height: calc(100% - 40px);
+      .dataTreeList {
+        border-left: 1px solid #e3e6eb;
+        padding: 0 8px;
+        max-height: 100%;
+        box-sizing: border-box;
+        height: 100%;
+        overflow: auto;
+        .collapse {
+          :global {
+            .ant-collapse-item {
+              .ant-collapse-header {
+                padding: 0;
+                display: flex;
+                align-items: center;
+                .ant-collapse-header-text {
+                  margin-top: 0;
+                  margin-bottom: 0;
+                  color: rgba(0, 0, 0, 0.88);
+                  font-weight: 500;
+                  font-size: 12px;
+                  line-height: 1.5;
+                  padding: 4px 0;
+                }
+              }
+              .ant-collapse-content-box {
+                padding: 0;
+              }
+            }
+          }
+        }
+        .node {
+          display: inline-flex;
+          align-items: center;
+          width: 100%;
+          overflow: hidden;
+          .node-icon {
+            --node-primary-color: #2961ef;
+            width: 26px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--node-primary-color);
+            img {
+              width: 14px;
+              height: 14px;
+              -webkit-filter: drop-shadow(#fff 100px 0);
+              filter: drop-shadow(#fff 100px 0);
+              transform: translateX(-100px);
+            }
+          }
+          .node-name {
+            width: 90px;
+            overflow: hidden;
+            text-align: left;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            //margin-left: 8px;
+          }
+        }
+        /* Webkit浏览器 */
+        &::-webkit-scrollbar {
+          width: 5px;
+          height: 5px;
+        }
+
+        /* 滚动条轨道 */
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 0px rgba(240, 240, 240, 0.5);
+          border-radius: 10px;
+          background-color: rgba(50, 50, 50, .1);
+        }
+
+        /* 滚动条滑块 */
+        &::-webkit-scrollbar-thumb {
+          bborder-radius: 10px;
+          box-shadow: inset 0 0 0px rgba(240, 240, 240, 0.5);
+          background-color: rgba(50, 50, 50, .3);
+        }
+      }
+      .dataEditor {
+        padding: 0 0px;
+        max-height: 100%;
+        box-sizing: border-box;
+        height: 100%;
+        overflow: auto;
+        .line-vertical {
+          background: #e3e6eb;
+          height: 1px;
+        }
+        .overNormal {
+          height: 100%;
+        }
+      }
+      .overScroll {
+        overflow: auto
+      }
+      .runCodeResult {
+        padding: 0 16px 10px;
+        height: 100%;
+        /* Webkit浏览器 */
+        &::-webkit-scrollbar {
+          width: 5px;
+          height: 5px;
+        }
+
+        /* 滚动条轨道 */
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 0px rgba(240, 240, 240, 0.5);
+          border-radius: 10px;
+          background-color: rgba(50, 50, 50, .1);
+        }
+
+        /* 滚动条滑块 */
+        &::-webkit-scrollbar-thumb {
+          bborder-radius: 10px;
+          box-shadow: inset 0 0 0px rgba(240, 240, 240, 0.5);
+          background-color: rgba(50, 50, 50, .3);
+        }
+        .resultTip {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          color: #13161b;
+          box-sizing: border-box;
+        }
+        .resultType {
+          padding: 6px 0;
+          display: flex;
+          font-size: 12px;
+        }
+        .resultValue {
+          padding: 6px 0;
+          display: flex;
+          font-size: 12px;
+        }
+        .resultErrValue {
+          padding: 6px 0;
+          display: flex;
+          font-size: 12px;
+          color: #e34d59;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,71 @@
+.paramCollectorContainer {
+  width: 100%;
+  .form-item-select {
+    width: 100%;
+  }
+  :global {
+    form {
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.table {
+  // min-height: 300px;
+  :global {
+    .ant-table-wrapper {
+      // min-height: 300px;
+    }
+    .ant-table-tbody {
+      .form-item-container {
+        width: 100%;
+      }
+    }
+  }
+}
+// key
+.form-key-item-input {
+  // width: 100px;
+}
+// value
+.inputValueContainer {
+  display: flex;
+  flex-direction: row;
+  .inputValueTypeSelect {
+    //width: 32px;
+    // width: 100px;
+    height: 100%;
+    .icon {
+      font-size: 18px;
+      min-width: 18px;
+      margin-right: 4px;
+    }
+  }
+  .inputSetter {
+    // width: 100px;
+  }
+}
+
+.customPageStateTreeSelect {
+  padding: 4px !important;
+}
+.form-key-item-input-container {
+  position: relative;
+  .form-key-item-input-after-icon {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    background-color: #d4e3fc;
+    padding: 0;
+    min-width: 0;
+    height: auto;
+    color: #0052d9;
+    cursor: pointer;
+    border-radius: 3px;
+    &:hover {
+      color: #ffffff;
+      background-color: #1677FF;
+    }
+  }
+}
